@@ -3,10 +3,9 @@ document.forms.publish.onsubmit = function() {
     name=name.replace(/ /g,'_');
     var massage = this.massage.value;
     massage=massage.replace(/ /g,'_');
-    var subject = this.subject.value;
-    subject = subject.replace(/ /g,'_');
     var email = this.email.value;
-    var url = 'https://desolate-basin-56713.herokuapp.com/m/' + subject +/'+name + '/' + massage + '/' + email + '/';
+    var youremail = this.youremail.value;
+    var url = 'https://desolate-basin-56713.herokuapp.com/m/' +name + '/' + massage + '/' + email + '/' + youremail + '/';
     function goToPage(url)
         {
             let script = document.createElement('script');
