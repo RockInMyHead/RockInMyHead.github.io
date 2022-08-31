@@ -5,7 +5,7 @@ document.forms.publish.onsubmit = function() {
     massage=massage.replace(/ /g,'_');
     var email = this.email.value;
     var youremail = this.youremail.value;
-    var url = 'https://desolate-basin-56713.herokuapp.com/m/' +name + '/' + massage + '/' + email + '/' + youremail + '/';
+    var url = 'https://desolate-basin-56713.herokuapp.com/m/' +name + '/' + massage + '/' + email + '/' + youremail ;
     function goToPage(url)
         {
             let script = document.createElement('script');
