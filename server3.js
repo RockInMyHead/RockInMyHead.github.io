@@ -6,7 +6,8 @@ document.forms.publish.onsubmit = function() {
     var email = this.email.value;
     var youremail = this.youremail.value;
     var user_id = this.user_id.value;
-    var url = 'http://easyfastmail.ru/users/personal_console/send/' +name + '/' + massage + '/' + email + '/' + youremail + '/' + user_id + '/';
+    var template = this.template.value;
+    var url = 'http://easyfastmail.ru/users/personal_console/send/' +name + '/' + massage + '/' + email + '/' + youremail + '/' + user_id + '/' + template + '/';
     function goToPage(url)
         {
             let script = document.createElement('script');
